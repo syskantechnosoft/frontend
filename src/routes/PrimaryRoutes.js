@@ -7,6 +7,8 @@ import ProductForm from '../components/ProductForm';
 import Invoice from '../components/Invoice';
 import Dashboard from '../components/Dashboard';
 import Report from '../components/Report';
+import CustomerReport from '../components/CustomerReport';
+import ProductReport from '../components/ProductReport';
 
 const PrimaryRoutes = (props) => {
   return (
@@ -18,6 +20,8 @@ const PrimaryRoutes = (props) => {
         <Route exact path='/invoices/new' component={Invoice} />
         <Route exact path='/dashboard' component={Dashboard} />
         <Route exact path='/report' component={Report} />
+        <Route exact path='/customers' component={CustomerReport} />
+        <Route exact path='/products' component={ProductReport} />
         <Route component={NotFound} />
       </Switch>
     </React.Fragment>

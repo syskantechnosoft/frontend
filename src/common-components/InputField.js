@@ -5,7 +5,11 @@ const InputField = (props) => {
     <React.Fragment>
       <div className='form-group'>
         <label className='h6'>{props.label}</label>
-        <input type={props.type} className='form-control' />
+        <input
+          type={props.type}
+          className='form-control'
+          onInput={(e) => props.onInput(e.target.value)}
+        />
         <small className='form-text text-muted'>{props.description}</small>
       </div>
     </React.Fragment>
